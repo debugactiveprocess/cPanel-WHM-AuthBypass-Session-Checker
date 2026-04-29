@@ -1,8 +1,16 @@
-A companion tool for the watchTowr CVE-2026-41940 authentication bypass exploit. After running the main exploit against a cPanel/WHM target, this script validates whether the injected session actually grants authenticated access by testing multiple endpoints (HTML pages, JSON API, WHM Terminal) — distinguishing between targets where the session injection succeeds but the server is patched (403 on all endpoints) versus fully compromised targets where the docheckpass_whostmgrd bypass works and root access is achieved. 
+# CVE-2026-41940 Session Validation Tool
 
-# Research Attribution
+A companion tool for the watchTowr CVE-2026-41940 authentication bypass exploit. After running the main exploit against a cPanel/WHM target, this script validates whether the injected session actually grants authenticated access by testing multiple endpoints (HTML pages, JSON API, WHM Terminal) distinguishing between targets where the session injection succeeds but the server is patched (403 on all endpoints) versus fully compromised targets where the docheckpass_whostmgrd bypass works and root access is achieved.
 
-The original research and technical analysis referenced in this project were conducted by **:contentReference[oaicite:0]{index=0}**.
+## PoC Result
+
+![PoC Result](https://i.imgur.com/UOVQYze.png)
+
+---
+
+## Research Attribution
+
+The original research and technical analysis referenced in this project were conducted by **watchTowr Labs**.
 
 - **Title:** *The Internet is Falling Down, Falling Down, Falling Down – cPanel & WHM Authentication Bypass (CVE-2026-41940)*  
 - **Source:** https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/
