@@ -4,6 +4,10 @@ A companion tool for the watchTowr CVE-2026-41940 authentication bypass exploit.
 
 ## PoC Result
 
+```bash
+python3 check_session.py --target https://127.0.0.1:2087/
+```
+
 ![PoC Result](https://i.imgur.com/UOVQYze.png)
 
 ---
